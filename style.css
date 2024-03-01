@@ -52,7 +52,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 6vh;
+    gap: 3.5vh;
 }
 .aside-container-img_texto{
     display: flex;
@@ -172,13 +172,15 @@ header{
 main{
     grid-column: 2/4;
     grid-row: 2/3;
+    height: 82vh;
 }
 .main2-container{
     display: grid;
-    grid-template-columns: 65% 37%;
+    grid-template-columns: 75% 25%;
     grid-template-rows: 30% 20% 50%;
     column-gap: 2vh;
     row-gap: 2vh;
+    height: 57vh;
 }
 
 
@@ -194,16 +196,19 @@ main{
     justify-content: space-between;
     padding: 1vh;
     font-size: 18px;
+    h3{
+        margin-left: 6.5vh;
+    }
 }
 .divs-finance{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .divs-finance div{
     background-color: var(--branca);
-    height: 27vh;
-    width: 27vh;
+    height: 25vh;
+    width: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,23 +232,27 @@ main{
 .courses-title{
     display: flex;
     justify-content: space-between;
+    margin: 0 4vh;
 }
 .courses-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 1vh;
     div{
         background-color: rgb(215, 197, 243);
         padding: 1.5vh;
         border-radius: 20px;
-        width:45%;
+        width:46%;
 
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         div{
             display: flex;
             flex-direction: column;
             gap: 3vh;
+            width: 250px;
             p{
                 color: var(--lilas-claro);
                 font-weight: 600;
@@ -265,25 +274,49 @@ main{
         }
     }
 }
-.imagem1{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-.imagem2{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
+
+
+
 
 
 
 
 .instructors-container{
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    font-size: 18px;
+    justify-content: space-between;
+    
+
+    div + div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            height: 11vh;
+            margin-top: 2vh;
+            margin-right: 1vw;
+        }
+    }
 }
+
+
+.inform-container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    div{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            
+        }
+    }
+}
+
+
 
 
 
